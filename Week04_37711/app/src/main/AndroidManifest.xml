@@ -8,10 +8,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Week04_37711">
+        android:theme="@style/Theme.Week4">
+        <activity android:name="id.ac.umn.week04b_37711.ThirdActivity"></activity>
+        <activity android:name="id.ac.umn.week04b_37711.SecondActivity" />
+        <activity android:name="id.ac.umn.week04b_37711.FirstActivity" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name="id.ac.umn.week04a_37711.ActivityDua"
+            android:label="Activity Kedua"
+            android:parentActivityName="id.ac.umn.week04a_41497.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="id.ac.umn.week04a_37711.MainActivity" />
+        </activity>
+        <activity android:name="id.ac.umn.week04a_37711.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
